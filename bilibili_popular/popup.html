@@ -1,0 +1,69 @@
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 360px;
+            height: 700px;
+            padding: 0.5em;
+            font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "sans-serif";
+            font-size: 15px;
+        }
+
+        .data {
+            height: 5.5em;
+            width: 100%;
+            margin-top: 0.5em;
+            text-decoration: none;
+            color: black;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+        }
+
+        .data:hover{
+            background: aliceblue;
+        }
+
+        .data .info {
+            width: 15em;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            margin-left: 1em;
+        }
+
+        .data .info .title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .data .info .owner {
+            color: #aaaaaa;
+            margin-left: 1em;
+        }
+
+        .data .info .rcmd_reason {
+            color: #aaaaaa;
+            border: 0.1em solid #bbbbbb;
+
+        }
+
+        .data img {
+            width: 8em;
+            border-radius: 0.3em;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="popList"></div>
+<script src="js/get_pop_list.js"></script>
+</body>
+</html>
